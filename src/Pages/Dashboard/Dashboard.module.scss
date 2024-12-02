@@ -1,0 +1,130 @@
+.dashboardbody {
+  margin: 5vh 7vw;
+
+  .banner {
+    text-align: center;
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      background-color: #ffffff;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+
+    .activeMenu {
+      background-color: #ffc107;
+      font-weight: bold;
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .dashboardbody {
+    margin: 2vh 4vw;
+
+    .banner {
+      img {
+        border-radius: 4px;
+      }
+    }
+
+    .menu {
+      flex-wrap: nowrap;
+      gap: 5px;
+
+      button {
+        font-size: 12px;
+        padding: 8px 12px;
+        border-radius: 8px;
+      }
+    }
+
+    .cards { 
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+  }
+
+  .header {
+    padding: 0 3%;
+    height: 10vh;
+
+    .actionButton {
+      font-size: 1.5vh;
+      padding: 5px 8px;
+      gap: 3px;
+    }
+
+    .profileImage {
+      width: 6vh;
+      height: 6vh;
+    }
+
+    .logo {
+      width: 3.5vw;
+    }
+  }
+}
+
+
+@media (max-width: 360px) {
+  .dashboardbody {
+    margin: 2vh 2vw;
+
+    .menu {
+      button {
+        font-size: 7px;
+        padding: 5px 6px;
+        border-radius: 6px;
+      }
+    }
+
+    .cards {
+      grid-template-columns: repeat(1, 1fr); 
+    }
+  }
+
+  .header {
+    .actionButton {
+      font-size: 1.3vh;
+      padding: 4px 6px;
+    }
+
+    .profileImage {
+      width: 5vh;
+      height: 5vh;
+    }
+
+    .logo {
+      width: 3vw;
+    }
+  }
+}

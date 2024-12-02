@@ -1,0 +1,85 @@
+.sidebar {
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+
+  .menu {
+    display: flex;
+    align-items: center;
+    margin-left: 2.5vw;
+    padding: 10px 0;
+    font-size: 3.5vh;
+    height: 8vh;
+  }
+
+  .pages {
+    color: black;
+    cursor: pointer;
+
+    .item {
+      display: flex;
+      padding: 2vh 2vw;
+      gap: 16px;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #009688;
+      }
+    }
+
+    .active {
+      background-color: #009688;
+      font-size: 3vh;
+    }
+
+    .titletext {
+      font-size: 2.5vh;
+    }
+  }
+
+  
+  @media (max-width: 576px) {
+    .menu {
+      font-size: 1vh; 
+      margin-left: 0; 
+    }
+
+    .pages {
+      .item {
+        padding: 1vh 1vw; 
+      }
+
+      .active {
+        font-size: 1vh; 
+      }
+
+      .titletext {
+        font-size: 1vh; /* Make title text slightly larger for mobile */
+      }
+    }
+  }
+
+
+  @media (max-width: 360px) {
+    padding: 10px; /* Reduce padding for smaller screens */
+
+    .menu {
+      font-size: 1vh; /* Increase font size slightly for better visibility on 360px */
+    }
+
+    .pages {
+      .item {
+        padding: 1vh 1vw; /* Further adjust padding for the smaller screen */
+      }
+
+      .active {
+        font-size: 1vh; /* Increase font size for active item */
+      }
+
+      .titletext {
+        font-size: 1vh; /* Increase the font size of title text */
+      }
+    }
+  }
+}

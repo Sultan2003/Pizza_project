@@ -1,0 +1,137 @@
+.header {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  z-index: 999;
+
+  @media (max-width: 576px) {
+    .header{ width: 100%};
+  }
+
+  @media (max-width: 320px) {
+    .header{ width: 100%};
+  }
+
+  .sidebarToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .actionButton {
+    padding: 1vh 1vw;
+    font-size: 2vh;
+    font-weight: 500;
+    border: 1px solid lightgray;
+    border-radius: 100px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-width: 20vw;
+    gap: 5px;
+
+    &:hover {
+      background-color: #f1f1f1;
+    }
+
+ 
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+
+  .leftSection {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    gap: 2vw;
+    margin-right: 5vw;
+
+    .logo {
+      margin-left: 3vw;
+      width: 4.5vw;
+      height: auto;
+    }
+
+    .location {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .rightSection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .languageSelector {
+      select {
+        border: 1px solid lightgray;
+        border-radius: 100px;
+        background-color: #f9f9f9;
+        padding: 1vh 1vw;
+        font-size: 2vh;
+        margin-right: 1vw;
+
+     
+        @media (max-width: 576px) {
+          font-size: 0.5vh;
+          padding: 0.3vh 0.7vw;
+        }
+      }
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .profileImage {
+        width: 10%;
+        height: 3vw;
+        border-radius: 50%;
+        border: 1px solid lightgray;
+        margin-right: -2vw;
+
+        @media (max-width: 576px) {
+          margin-top: 9px;
+          width: 3vh;
+          height: 5vw;
+        }
+      }
+    }
+
+    
+    @media (max-width: 576px) {
+      gap: 10px; 
+    }
+  }
+
+ 
+  @media (max-width: 576px) {
+    padding: 0 3%; 
+    justify-content: space-between; 
+
+    .leftSection {
+      display: flex;
+      gap: 10px; 
+    }
+
+    .rightSection {
+      display: flex;
+      gap: 10px; 
+    }
+
+    .actionButton {
+      display: none;
+    }
+  }
+}
