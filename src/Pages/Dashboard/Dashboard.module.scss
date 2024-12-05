@@ -26,6 +26,7 @@
       border-radius: 10px;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      font-size: 2vh;
 
       &:hover {
         background-color: #ddd;
@@ -44,7 +45,6 @@
     gap: 20px;
   }
 }
-
 
 @media (max-width: 576px) {
   .dashboardbody {
@@ -67,7 +67,7 @@
       }
     }
 
-    .cards { 
+    .cards {
       grid-template-columns: repeat(1, 1fr);
       gap: 10px;
     }
@@ -94,7 +94,6 @@
   }
 }
 
-
 @media (max-width: 360px) {
   .dashboardbody {
     margin: 2vh 2vw;
@@ -108,7 +107,7 @@
     }
 
     .cards {
-      grid-template-columns: repeat(1, 1fr); 
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 

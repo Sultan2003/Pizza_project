@@ -10,8 +10,8 @@
   align-items: flex-start;
   padding: 16px;
   gap: 16px;
-  width: 309px;
-  height: 430px;
+  width: 20.25vw;
+  height: auto;
   background: #ffffff;
   border-radius: 12px;
   flex-grow: 0;
@@ -23,8 +23,8 @@
   img {
     align-self: center;
     border-radius: 8px;
-    max-width: 100%;
-    height: auto;
+    max-width: 18vw;
+    height: 30vh;
   }
 
   h3 {
@@ -36,17 +36,17 @@
 
   p {
     height: 30px;
-    font-size: 1em;
+    font-size: 2.5vh;
     color: #666;
   }
 
   .pricebutton {
-    padding-top: 15px;
+    padding-top: 10%;
 
     span {
       font-weight: bold;
       color: #333;
-      font-size: 1.2em;
+      font-size: 3vh;
     }
 
     button {
@@ -56,7 +56,9 @@
       border-radius: 8px;
       cursor: pointer;
       margin-left: 20px;
-      font-size: 14px;
+      font-size: 1.8vh;
+      margin-left: 3.5vw;
+      width: 6.5vw;
 
       &:hover {
         background-color: #ec8d1e;
@@ -67,25 +69,26 @@
 
 @media (max-width: 576px) {
   .card {
-    max-width: 150px; 
-    height: auto; 
+    max-width: 150px;
+    height: 180px;
     padding: 12px;
     gap: 12px;
+    border-radius: 5px;
 
     h3 {
-      font-size: 1.2em; 
+      font-size: 12px;
     }
 
     p {
-      font-size: 0.9em; 
-      height: auto; 
+      font-size: 0.5vh;
+      height: auto;
     }
 
     .pricebutton {
       padding-top: 10px;
 
       span {
-        font-size: 0.5em;
+        font-size: 10px;
       }
 
       button {
@@ -112,7 +115,7 @@
 
     .pricebutton {
       span {
-        font-size: 0.9em;
+        font-size: 7px;
       }
 
       button {
