@@ -4,11 +4,21 @@ import {
   cardData,
 } from "../../components/MenuItemsData/MenuItemsData";
 import Cards from "../../components/ProductCard";
+import Modal from "../../components/Modal";
 import bnr from "../../assets/images/Banner.png";
 import styles from "./Dashboard.module.scss";
 
 function Dashboard() {
   const [activeMenu, setActiveMenu] = useState("Пицца");
+  const [selectedProduct, setSelectedProduct] = useState(null); 
+
+  const handleSelectProduct = (product) => {
+    setSelectedProduct(product); 
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProduct(null);
+  };
 
   return (
     <div className={styles.dashboardbody}>
@@ -29,8 +39,15 @@ function Dashboard() {
       </div>
 
       <div className={styles.cards}>
-        <Cards cardData={cardData[activeMenu]} />
+        <Cards
+          cardData={cardData[activeMenu]}
+          onSelectProduct={handleSelectProduct}
+        />
       </div>
+
+      {selectedProduct && (
+        <Modal product={selectedProduct} onClose={handleCloseModal} />
+      )}
     </div>
   );
 }

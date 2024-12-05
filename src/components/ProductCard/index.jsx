@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Card.module.scss";
 
-function Cards({ cardData }) {
+function Cards({ cardData, onSelectProduct }) {
   return (
     <div className={styles.cardsContainer}>
       {cardData.map(({ id, name, description, price, image }) => (
@@ -11,7 +11,9 @@ function Cards({ cardData }) {
           <p>{description}</p>
           <div className={styles.pricebutton}>
             <span>{price}</span>
-            <button>Выбрать</button>
+            <button onClick={() => onSelectProduct({ id, name, description, price, image })}>
+              Выбрать
+            </button>
           </div>
         </div>
       ))}
