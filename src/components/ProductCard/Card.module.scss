@@ -57,7 +57,7 @@
       cursor: pointer;
       margin-left: 20px;
       font-size: 1.8vh;
-      margin-left: 6vw;
+      margin-left: vw;
       width: 6.5vw;
 
       &:hover {
@@ -69,8 +69,8 @@
 
 @media (max-width: 576px) {
   .card {
-    max-width: 150px;
-    height: 180px;
+    min-width: 25vw;
+    height: 200px;
     padding: 12px;
     gap: 12px;
     border-radius: 5px;
@@ -80,47 +80,57 @@
     }
 
     p {
-      font-size: 0.5vh;
-      height: auto;
+      font-size: 1.3vw;
+      height: 9vw;
     }
 
     .pricebutton {
+      display: flex;
       padding-top: 10px;
+      gap: 3vw;
 
       span {
         font-size: 10px;
       }
 
       button {
-        display: none;
+        padding: 1px 3px;
+        font-size: 4.5px;
+        
       }
     }
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
   .card {
     padding: 10px;
     gap: 8px;
-    max-width: 150px;
+    min-width: 25vw;
 
     h3 {
-      font-size: 0.8em;
+      font-size: 2.5vw;
     }
 
     p {
-      min-height: 30px;
-      font-size: 0.4em;
+      max-height: 9vw;
+      font-size: 1.7vw;
+    
     }
 
     .pricebutton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
       span {
-        font-size: 7px;
+        font-size: 5px;
       }
 
       button {
-        padding: 3px 8px;
-        font-size: 11px;
+        padding: 3px 2px;
+        font-size: 4px;
       }
     }
   }
