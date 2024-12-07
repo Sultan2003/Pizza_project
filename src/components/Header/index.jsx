@@ -33,7 +33,10 @@ export default function Header({ setOpenSidebar }) {
           <GroupOrder />
           <span>Групповой заказ</span>
         </button>
-        <button className={styles.actionButton}>
+        <button
+          className={styles.actionButton}
+          onClick={() => navigate("/basket")}
+        >
           <Shopbox />
           <span>Корзина</span>
         </button>

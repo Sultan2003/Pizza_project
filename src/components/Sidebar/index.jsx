@@ -13,20 +13,20 @@ const items = [
   {
     id: 1,
     title: "Филиалы",
-    
+
     navigateTo: "/filials",
   },
   {
     id: 2,
     title: "О нас",
-    
-    navigateTo: "/courses",
+
+    navigateTo: "/Info",
   },
   {
     id: 3,
     title: "Контакты",
-    
-    navigateTo: "/create-quiz",
+
+    navigateTo: "/contacts",
   },
 ];
 
@@ -36,7 +36,9 @@ export default function Sidebar() {
 
   return (
     <div className={styles.sidebar}>
-      <div className={styles.menu}>Меню</div>
+      <div className={styles.menu} onClick={() => navigate("/")}>
+        Меню
+      </div>
       <div className={styles.pages}>
         {items.map((item) => (
           <div

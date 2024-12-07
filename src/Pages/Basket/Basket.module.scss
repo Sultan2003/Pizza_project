@@ -1,0 +1,110 @@
+.basketContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.basketItems {
+  width: 70%;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.clearButton {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.itemImage {
+  width: 60px;
+  height: 60px;
+}
+
+.itemDetails {
+  flex: 2;
+  margin-left: 10px;
+}
+
+.itemPrice {
+  flex: 1;
+  text-align: center;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.quantityControls button {
+  background: none;
+  border: 1px solid #ccc;
+  width: 30px;
+  height: 30px;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.orderSummary {
+  width: 25%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.orderDetails {
+  margin-bottom: 20px;
+}
+
+.orderItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.delivery,
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.checkoutButton {
+  background-color: orange;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
