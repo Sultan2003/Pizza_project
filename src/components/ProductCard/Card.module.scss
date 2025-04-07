@@ -29,7 +29,7 @@
 
   h3 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.7vw;
     font-weight: bold;
     color: #333;
   }
@@ -41,7 +41,8 @@
   }
 
   .pricebutton {
-    padding-top: 10%;
+    margin-top: 3vw;
+    
 
     span {
       font-weight: bold;
@@ -57,7 +58,7 @@
       cursor: pointer;
       margin-left: 20px;
       font-size: 1.8vh;
-      margin-left: vw;
+      margin-left: 5vw;
       width: 6.5vw;
 
       &:hover {

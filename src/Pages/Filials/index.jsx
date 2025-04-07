@@ -30,7 +30,7 @@ const Filials = () => {
         {showMap ? (
           <div className={styles.mapContainer}>
             <MapContainer
-              center={[41.311081, 69.240562]} // Tashkent's latitude and longitude
+              center={[41.311081, 69.240562]}
               zoom={12}
               style={{ height: "500px", width: "100%" }}
             >
@@ -39,10 +39,7 @@ const Filials = () => {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               />
               {filialsData.map((filial, index) => (
-                <Marker
-                  key={index}
-                  position={filial.coordinates} // Add `coordinates` field to filialsData.js
-                >
+                <Marker key={index} position={filial.coordinates}>
                   <Popup>
                     <strong>{filial.name}</strong>
                     <br />
