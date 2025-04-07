@@ -7,7 +7,7 @@ import {
   Shopbox,
 } from "../../assets/icons/headerIcons";
 import { useNavigate } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/Logo.png";
 
 export default function Header({ setOpenSidebar }) {
   const navigate = useNavigate();
