@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+/* import { Route, Routes } from "react-router-dom";
 
 import MainLayout from "../layouts/MainLayout";
 import Basket from "../Pages/Basket";
@@ -18,3 +18,4 @@ const Router = () => {
 };
 
 export default Router;
+*/
